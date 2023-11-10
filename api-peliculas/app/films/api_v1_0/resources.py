@@ -10,7 +10,7 @@ api=Api(films_v1_0_bp)
 
 class FilmListResource(Resource):
     def get(self):
-        print('ENTROO0')
+        print('Entro a la url')
         films=Film.get_all()
         print('ENTROO ')
         result=film_schema.dump(films,many=True)
